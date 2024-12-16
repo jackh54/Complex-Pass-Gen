@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        
+        <div class="password-display-container">
+            <div id="passwordDisplay" class="password-display"></div>
+            <button class="copy-button" id="copyButton">Copy</button>
+        </div>
+
+        <div class="strength-indicator">
+            <div class="strength-meter">
+                <div class="strength-meter-fill" id="strengthMeter"></div>
+            </div>
+            <div class="strength-text" id="strengthText">Password Strength</div>
+        </div>
+
+        <div class="options-container">
+            <div class="input-group">
+                <label for="length">Password Length:</label>
+                <input type="number" id="length" min="8" max="128" value="12">
+            </div>
+            
+            <div class="option-group">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="uppercase" checked>
+                    <label for="uppercase">Uppercase Letters</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="lowercase" checked>
+                    <label for="lowercase">Lowercase Letters</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="numbers" checked>
+                    <label for="numbers">Numbers</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="symbols" checked>
+                    <label for="symbols">Symbols</label>
+                </div>
+            </div>
+        </div>
+        
+        <button id="generate">Generate Password</button>
+        <button id="toggleDarkMode">Toggle Dark Mode</button>
+    </div>
+</body>
+</html>

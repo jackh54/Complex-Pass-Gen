@@ -1,0 +1,26 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "description": "A secure password generator",
+  "main": "src/scripts/main.js",
+  "scripts": {
+    "test": "node node_modules/jest/bin/jest.js",
+    "start": "live-server src"
+  },
+  "keywords": [
+    "password",
+    "generator",
+    "security",
+    "utility"
+  ],
+  "author": "Jack H",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "live-server": "^1.2.1"
+  },
+  "type": "module"
+}
